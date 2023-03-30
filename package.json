@@ -1,0 +1,11 @@
+{
+  "name": "code-challenges",
+  "version": "1.0.0",
+  "description": "A collection of code challenges",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Aguilar",
+  "license": "ISC"
+}

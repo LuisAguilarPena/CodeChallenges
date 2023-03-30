@@ -15,7 +15,7 @@ If you don't find two consecutive F(n) verifying F(n) * F(n+1) = prodyou will re
 */
 
 function productFib(prod){
-  // ...
+  // TODO
   return [55, 89, true];
 }
 

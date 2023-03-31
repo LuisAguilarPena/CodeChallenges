@@ -20,10 +20,18 @@ Given the initial configuration of the cubes in the box, find out how many cubes
 
 */
 
-const flip=(d, a)=>{
-  //TODO
-  return 
+const flip = (direction, array) => {
+  if(direction === 'R') {
+    return array.sort((a, b) => a - b);
+  }
+
+  if(direction === 'L') {
+    return array.sort((a, b) => b - a);
+  }
 };
 
-assert.deepEqual(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
-assert.deepEqual(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+// one liner 
+// const flip = (direction, array) => array.sort((a, b) => direction === 'R' ? a - b : b - a);
+
+deepEqual(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
+deepEqual(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);

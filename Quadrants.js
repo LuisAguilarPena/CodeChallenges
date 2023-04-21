@@ -18,7 +18,7 @@ Fourth quadrant, the quadrant in the bottom-right, contains all points with posi
 */
 
 function quadrant(x, y) {
-  return 1
+  //...
 }
 
 strictEqual(quadrant(1, 2), 1, "That is not the correct quadrant")

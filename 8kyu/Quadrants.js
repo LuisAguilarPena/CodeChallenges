@@ -21,8 +21,8 @@ function quadrant(x, y) {
   //...
 }
 
-strictEqual(quadrant(1, 2), 1, "That is not the correct quadrant")
-strictEqual(quadrant(3, 5), 1, "That is not the correct quadrant")
-strictEqual(quadrant(-10, 100), 2, "That is not the correct quadrant")
-strictEqual(quadrant(-1, -9), 3, "That is not the correct quadrant")
-strictEqual(quadrant(19, -56), 4, "That is not the correct quadrant")
+strictEqual(quadrant(1, 2), 1, "That is not the correct quadrant");
+strictEqual(quadrant(3, 5), 1, "That is not the correct quadrant");
+strictEqual(quadrant(-10, 100), 2, "That is not the correct quadrant");
+strictEqual(quadrant(-1, -9), 3, "That is not the correct quadrant");
+strictEqual(quadrant(19, -56), 4, "That is not the correct quadrant");

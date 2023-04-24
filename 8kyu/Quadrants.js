@@ -18,8 +18,21 @@ Fourth quadrant, the quadrant in the bottom-right, contains all points with posi
 */
 
 function quadrant(x, y) {
-  //...
-}
+  // if(x > 0 && y > 0) {
+  //   return 1
+  // };
+  // if(x < 0 && y > 0) {
+  //   return 2
+  // };
+  // if(x < 0 && y < 0) {
+  //   return 3
+  // };
+  // if(x > 0 && y < 0) {
+  //   return 4
+  // };
+  // return [3, 4, 2, 1][Math.sign(x) / 2 + Math.sign(y) + 1.5];
+  return x > 0 ? y > 0 ? 1 : 4 : y > 0 ? 2 : 3;
+};
 
 strictEqual(quadrant(1, 2), 1, "That is not the correct quadrant");
 strictEqual(quadrant(3, 5), 1, "That is not the correct quadrant");

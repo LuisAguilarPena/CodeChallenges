@@ -1,3 +1,5 @@
+const expect = require('chai').expect;
+
 // Write a function that will find all permutations of a given string
 // Input: 'abc'
 // Output: ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
@@ -26,4 +28,7 @@ function stringPermutations(str) {
     return permutations;
 }
 
-console.log(stringPermutations('abc')); // ['abc', 'acb', 'bac', 'bca', 'cab', 'cba']
+expect(stringPermutations('abc')).to.deep.equal(['abc', 'acb', 'bac', 'bca', 'cab', 'cba']);
+expect(stringPermutations('abcd').length).to.equal(24);
+expect(stringPermutations('abcde').length).to.equal(120);
+expect(stringPermutations('abcdef').length).to.equal(720);

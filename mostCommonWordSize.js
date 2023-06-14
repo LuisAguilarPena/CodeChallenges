@@ -1,3 +1,5 @@
+const expect = require('chai').expect;
+
 // Input: a string - "The dog jumped over the fence" - only contains letters and spaces
 // Output: an integer that represents the most common word size in the provided sentence - 3
 // if there are multiple words with the same size, return the first one
@@ -29,8 +31,6 @@ function mostCommonWordSize(str) {
 
     }
 
-    console.log(occurences);
-
     // I can re use sizeCounter to now track most common word size
     sizeCounter = 0;
     
@@ -49,9 +49,9 @@ function mostCommonWordSize(str) {
         }
     }
 
-    return sizeCounter;
+    return +sizeCounter;
 }
 
-// console.log(mostCommonWordSize("The dog jumped over the fence")); // 3
-// console.log(mostCommonWordSize("")); // 0
-console.log(mostCommonWordSize("ex. an array of the given object's own enumerable string-keyed property key-value pairs")); // 3
+expect(mostCommonWordSize("The dog jumped over the fence")).to.equal(3);
+expect(mostCommonWordSize("")).to.equal(0);
+expect(mostCommonWordSize("ex. an array of the given object's own enumerable string-keyed property key-value pairs")).to.equal(3);
